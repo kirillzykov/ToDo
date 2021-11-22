@@ -1,0 +1,15 @@
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\bin\Debug\net5.0\ToDo.Infrastructure.deps.json
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\bin\Debug\net5.0\ToDo.Infrastructure.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\bin\Debug\net5.0\ref\ToDo.Infrastructure.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\bin\Debug\net5.0\ToDo.Infrastructure.pdb
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\bin\Debug\net5.0\ToDo.Core.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\bin\Debug\net5.0\ToDo.Core.pdb
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.AssemblyInfo.cs
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.csproj.CopyComplete
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ref\ToDo.Infrastructure.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Infrastructure\obj\Debug\net5.0\ToDo.Infrastructure.pdb

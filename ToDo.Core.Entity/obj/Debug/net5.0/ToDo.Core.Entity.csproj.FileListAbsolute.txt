@@ -1,0 +1,12 @@
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\bin\Debug\net5.0\ToDo.Core.Entity.deps.json
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\bin\Debug\net5.0\ToDo.Core.Entity.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\bin\Debug\net5.0\ref\ToDo.Core.Entity.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\bin\Debug\net5.0\ToDo.Core.Entity.pdb
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.csproj.AssemblyReference.cache
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.AssemblyInfoInputs.cache
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.AssemblyInfo.cs
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ref\ToDo.Core.Entity.dll
+C:\Users\Glinka\source\repos\ToDo\ToDo.Core.Entity\obj\Debug\net5.0\ToDo.Core.Entity.pdb

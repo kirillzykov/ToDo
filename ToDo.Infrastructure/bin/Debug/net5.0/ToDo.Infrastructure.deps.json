@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ToDo.Infrastructure/1.0.0": {
+        "dependencies": {
+          "ToDo.Core": "1.0.0"
+        },
+        "runtime": {
+          "ToDo.Infrastructure.dll": {}
+        }
+      },
+      "ToDo.Core/1.0.0": {
+        "runtime": {
+          "ToDo.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ToDo.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDo.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
