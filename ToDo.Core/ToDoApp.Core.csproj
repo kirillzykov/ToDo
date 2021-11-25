@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ToDoApp.Core</RootNamespace>
+    <AssemblyName>ToDoApp.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDo.Core.Entity\ToDoApp.Core.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

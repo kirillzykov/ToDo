@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "ToDoApp.Core.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ToDoApp.Core.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDoApp.Core.Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ToDoApp.Core.Entity/1.0.0": {
+      "type": "project",
+      "path": "../ToDo.Core.Entity/ToDoApp.Core.Entity.csproj",
+      "msbuildProject": "../ToDo.Core.Entity/ToDoApp.Core.Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ToDoApp.Core.Entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Glinka\\.nuget\\packages\\": {},
@@ -14,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\ToDo.Core.csproj",
-      "projectName": "ToDo.Core",
-      "projectPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\ToDo.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\ToDoApp.Core.csproj",
+      "projectName": "ToDoApp.Core",
+      "projectPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\ToDoApp.Core.csproj",
       "packagesPath": "C:\\Users\\Glinka\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\obj\\",
       "projectStyle": "PackageReference",
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\ToDoApp.Core.Entity.csproj": {
+              "projectPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\ToDoApp.Core.Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

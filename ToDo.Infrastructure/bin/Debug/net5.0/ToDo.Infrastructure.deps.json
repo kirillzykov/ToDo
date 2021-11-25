@@ -8,15 +8,23 @@
     ".NETCoreApp,Version=v5.0": {
       "ToDo.Infrastructure/1.0.0": {
         "dependencies": {
-          "ToDo.Core": "1.0.0"
+          "ToDoApp.Core": "1.0.0"
         },
         "runtime": {
           "ToDo.Infrastructure.dll": {}
         }
       },
-      "ToDo.Core/1.0.0": {
+      "ToDo.Core.Entity/1.0.0": {
         "runtime": {
-          "ToDo.Core.dll": {}
+          "ToDo.Core.Entity.dll": {}
+        }
+      },
+      "ToDoApp.Core/1.0.0": {
+        "dependencies": {
+          "ToDo.Core.Entity": "1.0.0"
+        },
+        "runtime": {
+          "ToDoApp.Core.dll": {}
         }
       }
     }
@@ -27,7 +35,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ToDo.Core/1.0.0": {
+    "ToDo.Core.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDoApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

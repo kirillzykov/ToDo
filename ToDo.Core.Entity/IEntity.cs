@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ToDo.Core.Entity
+namespace ToDoApp.Core.Entity
 {
     public interface IEntity
     {

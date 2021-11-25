@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\ToDo.Core.Entity.csproj",
-      "projectName": "ToDo.Core.Entity",
-      "projectPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\ToDo.Core.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\ToDoApp.Core.Entity.csproj",
+      "projectName": "ToDoApp.Core.Entity",
+      "projectPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\ToDoApp.Core.Entity.csproj",
       "packagesPath": "C:\\Users\\Glinka\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core.Entity\\obj\\",
       "projectStyle": "PackageReference",
