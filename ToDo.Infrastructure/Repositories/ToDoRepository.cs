@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using ToDoApp.Core.DomainService;
@@ -8,31 +9,39 @@ using ToDoApp.Core.Entity.Models;
 
 namespace ToDoApp.Infrastructure.Repositories
 {
-    class ToDoRepository : RepositoryBase<ToDo>, IToDoRepository
+    public class ToDoRepository : RepositoryBase<ToDo>, IToDoRepository
     {
-        public ToDo CreateToDo(ToDo toDo)
+        readonly ToDoAppContext _ctx;
+        public ToDoRepository(ToDoAppContext ctx)
+         : base(ctx)
         {
-            throw new NotImplementedException();
+            _ctx = ctx;
         }
 
-        public ToDo DeleteToDo(int id)
+        public ToDo CreateToDo(ToDo toDo)
         {
-            throw new NotImplementedException();
+            return Create(toDo);       
+        }
+
+        public ToDo DeleteToDo(ToDo toDo)
+        {
+            return Delete(toDo);
         }
 
         public List<ToDo> ReadAllToDos()
         {
-            throw new NotImplementedException();
+            return FindAll();
         }
 
-        public ToDo ReadById(int id)
+        public ToDo ReadById(ToDo toDo)
         {
-            throw new NotImplementedException();
+            Expression<Func<ToDo, bool>> byId = o => o.Id == toDo.Id;
+            return FindByCondition(byId).FirstOrDefault();
         }
 
-        public ToDo UpdateToDo(ToDo toDoUpdate)
+        public ToDo UpdateToDo(ToDo toDo)
         {
-            throw new NotImplementedException();
+            return Update(toDo);
         }
     }
 }

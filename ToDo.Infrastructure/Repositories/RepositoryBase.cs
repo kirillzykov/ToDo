@@ -1,53 +1,66 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using ToDoApp.Core.DomainService;
+using ToDoApp.Core.Entity;
 
 namespace ToDoApp.Infrastructure.Repositories
 {
-    class RepositoryBase<T> : IRepositoryBase<T>
+    public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        public object Create(T entity)
+        readonly ToDoAppContext _ctx;
+        private DbSet<T> entities;
+
+        public RepositoryBase(ToDoAppContext ctx)
         {
-            throw new NotImplementedException();
+            _ctx = ctx;
+            entities = _ctx.Set<T>();
+        }
+        public T Create(T entity)
+        {
+            T added = entities.Add(entity).Entity;
+            _ctx.SaveChanges();
+            return added;
         }
 
-        public bool Delete(object id)
-        {
-            throw new NotImplementedException();
+        public T Delete(T entity)
+        {           
+            T removed = entities.Remove(entity).Entity;
+            _ctx.SaveChanges();
+            return removed;         
         }
 
-        public T Find(object id)
+        public T Find(int id)
         {
-            throw new NotImplementedException();
+            return entities.Find(id);
         }
 
         public List<T> FindAll()
         {
-            throw new NotImplementedException();
+            return entities.ToList();
         }
 
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> filter)
         {
-            throw new NotImplementedException();
+            return entities.Where(filter);
         }
 
-        public IEnumerable<T> Query()
+        public IEnumerable<T> Query(Func<T, bool> filter)
         {
-            throw new NotImplementedException();
+            return entities.Where(filter);
         }
 
-        public IEnumerable<T> Query(Expression<Func<T, bool>> filter)
+        public T Update(T entity)
         {
-            throw new NotImplementedException();
-        }
 
-        public bool Update(T entity)
-        {
-            throw new NotImplementedException();
+            T modified = entities.Update(entity).Entity;
+            _ctx.SaveChanges();
+            return modified;
         }
     }
 }
+

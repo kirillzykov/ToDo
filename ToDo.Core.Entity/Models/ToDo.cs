@@ -9,8 +9,8 @@ namespace ToDoApp.Core.Entity.Models
     public class ToDo : IEntity
     {
         public int Id { get; set; }
-        public string Task;
-        bool IsComplete;
-        DateTime Date;
+        public string Task { get; set; }
+        public bool IsComplete { get; set; }
+        public DateTime? Date { get; set; }
     }
 }

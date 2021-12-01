@@ -10,9 +10,9 @@ namespace ToDoApp.Core.DomainService
     public interface IToDoRepository
     {
         ToDo CreateToDo(ToDo toDo);
-        ToDo ReadById(int id);
+        ToDo ReadById(ToDo toDo);
         List<ToDo> ReadAllToDos();
         ToDo UpdateToDo(ToDo toDoUpdate);
-        ToDo DeleteToDo(int id);
+        ToDo DeleteToDo(ToDo toDo);
     }
 }

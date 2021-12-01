@@ -12,6 +12,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToDoApp.Infrastructure;
+using ToDoApp.Infrastructure.Repositories;
+using ToDoApp.Core;
+using ToDoApp.Core.ApplicationService;
+using ToDoApp.Core.ApplicationService.Services;
+using ToDoApp.Core.DomainService;
+using System.Diagnostics;
 
 namespace ToDoApi
 {
@@ -27,9 +33,13 @@ namespace ToDoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ToDoAppContext>(
-                    opt => opt
-                        .UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ToDoAppContext>(optitons =>
+            {
+                optitons.UseSqlServer(Configuration.GetConnectionString("Default"));
+            });
+            Debug.WriteLine(Configuration.GetConnectionString("Default"));
+            services.AddScoped<IToDoRepository, ToDoRepository>();
+            services.AddScoped<IToDoService, ToDoService>();
             services.AddControllers();
         }
 

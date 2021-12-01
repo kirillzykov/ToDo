@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace ToDoApp.Core.DomainService
 {
-    public interface IRepositoryBase<T>
+    public interface IRepositoryBase<T> where T : class
     {
-        T Find(object id);
-        object Create(T entity);
-        bool Update(T entity);
-        bool Delete(object id);
+        T Find(int id);
+        T Create(T entity);
+        T Update(T entity);
+        T Delete(T entity);
         List<T> FindAll();
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> filter);
-        IEnumerable<T> Query();
-        IEnumerable<T> Query(Expression<Func<T, bool>> filter);
+        IEnumerable<T> Query(Func<T, bool> filter);
     }
 }
