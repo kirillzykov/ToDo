@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZXBs8rKQOsoYuGX92YZoxjUT1q4QMsgSVlpyZnEYDVUUCB/Zro/Q5HscgfFSznn/mRuDFHjuGFDFfKC8y3YO5Q==",
+  "dgSpecHash": "AowhS++BHFGaEDj1hlMVZjQkOVor1v+sxr6VF0cQvzS96QsEnI3DN202gZNNO8aEQMcD2dx9d50jsmBzUKvOnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\ToDo.Core.csproj",
+  "projectFilePath": "C:\\Users\\Glinka\\source\\repos\\ToDo\\ToDo.Core\\ToDoApp.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
