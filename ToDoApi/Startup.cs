@@ -18,6 +18,7 @@ using ToDoApp.Core.ApplicationService;
 using ToDoApp.Core.ApplicationService.Services;
 using ToDoApp.Core.DomainService;
 using System.Diagnostics;
+using Serilog;
 
 namespace ToDoApi
 {
@@ -50,6 +51,8 @@ namespace ToDoApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSerilogRequestLogging();
 
             app.UseHttpsRedirection();
 

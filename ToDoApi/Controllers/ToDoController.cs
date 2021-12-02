@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,16 +14,20 @@ namespace ToDoApi.Controllers
     public class ToDoController : Controller
     {
         private readonly IToDoService _toDoService;
+        readonly IDiagnosticContext _diagnosticContext;
 
-        public ToDoController(IToDoService toDoService)
+        public ToDoController(IToDoService toDoService, IDiagnosticContext diagnosticContext)
         {
             _toDoService = toDoService;
+            _diagnosticContext = diagnosticContext ??
+                throw new ArgumentNullException(nameof(diagnosticContext));
         }
 
         // GET api/todo -- READ All
         [HttpGet]
         public ActionResult<List<ToDo>> Get()
         {
+            _diagnosticContext.Set("CatalogLoadTime", 1423);
             try
             {
                 return Ok(_toDoService.GetAll());
@@ -53,6 +58,7 @@ namespace ToDoApi.Controllers
         [HttpPost]
         public ActionResult<ToDo> Post([FromBody] ToDo toDo)
         {
+            _diagnosticContext.Set("CatalogLoadTime", 1423);
             try
             {
                 return Ok(_toDoService.Create(toDo));
