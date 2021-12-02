@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
+using Serilog.Formatting.Compact;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,7 +45,9 @@ namespace ToDoApi
                 .ReadFrom.Configuration(context.Configuration)
                 .ReadFrom.Services(services)
                 .Enrich.FromLogContext()
-                .WriteTo.Console())
+                .WriteTo.Console()
+                .WriteTo.File(new CompactJsonFormatter(), @"D:\todoapp.json", rollingInterval: RollingInterval.Day))
+                
                 /*.ConfigureLogging((context, logging) =>
                 {
                     //logging.ClearProviders();
